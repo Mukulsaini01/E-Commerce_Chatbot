@@ -5,7 +5,7 @@ cnx = mysql.connector.connect(
     host="localhost",
     user="root",
     password="123456",
-    database="pandeyji_eatery"
+    database="lalaji"
 )
 
 # Function to call the MySQL stored procedure and insert an order item
@@ -112,8 +112,4 @@ def get_order_status(order_id):
 
 
 if __name__ == "__main__":
-    # print(get_total_order_price(56))
-    # insert_order_item('Samosa', 3, 99)
-    # insert_order_item('Pav Bhaji', 1, 99)
-    # insert_order_tracking(99, "in progress")
     print(get_next_order_id())
